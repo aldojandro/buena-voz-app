@@ -1,20 +1,27 @@
 import { prisma } from "../prisma";
-import { partyToSlug, slugToParty } from "./utils";
+import { slugToParty } from "./utils";
+import type {
+  Candidate,
+  Document,
+  ThematicClassification,
+  ProposalTypology,
+  CandidateInsights,
+} from "@prisma/client";
 
 export interface ComparisonData {
   candidateA: {
-    candidate: any;
-    document: any;
-    thematic: any[];
-    typology: any[];
-    insights: any;
+    candidate: Candidate;
+    document: Document;
+    thematic: ThematicClassification[];
+    typology: ProposalTypology[];
+    insights: CandidateInsights | null;
   };
   candidateB: {
-    candidate: any;
-    document: any;
-    thematic: any[];
-    typology: any[];
-    insights: any;
+    candidate: Candidate;
+    document: Document;
+    thematic: ThematicClassification[];
+    typology: ProposalTypology[];
+    insights: CandidateInsights | null;
   };
 }
 

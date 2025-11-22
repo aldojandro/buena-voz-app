@@ -1,6 +1,13 @@
 import { notFound } from "next/navigation";
 import { fetchComparisonData } from "@/lib/analytics/comparison";
-import { detailLevelToScore, normalizeCategoryName } from "@/lib/analytics/utils";
+import { normalizeCategoryName } from "@/lib/analytics/utils";
+import type {
+  ScoreData,
+  OverviewData,
+  PatternsData,
+  DetailLevelsData,
+  DetailLevelsByTopic,
+} from "@/lib/analytics/types";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Separator } from "@/components/ui/separator";
@@ -104,52 +111,78 @@ export default async function ComparisonPage({ params }: PageProps) {
   const insightsA = dataA.insights;
   const insightsB = dataB.insights;
 
-  const detailLevelsA = insightsA?.detailLevels as Record<string, string[]> | undefined;
-  const detailLevelsB = insightsB?.detailLevels as Record<string, string[]> | undefined;
+  const detailLevelsA = insightsA?.detailLevels as DetailLevelsData | DetailLevelsByTopic | undefined;
+  const detailLevelsB = insightsB?.detailLevels as DetailLevelsData | DetailLevelsByTopic | undefined;
 
-  const detailTopics = new Set<string>();
-  if (detailLevelsA) {
-    Object.keys(detailLevelsA).forEach((key) => detailTopics.add(key));
-  }
-  if (detailLevelsB) {
-    Object.keys(detailLevelsB).forEach((key) => detailTopics.add(key));
-  }
-
-  const detailRadarData = Array.from(detailTopics).map((topic) => {
-    const levelA = detailLevelsA?.[topic];
-    const levelB = detailLevelsB?.[topic];
-
-    let scoreA = 1;
-    let scoreB = 1;
-
-    if (levelA) {
-      if (levelA.includes("alto")) scoreA = 5;
-      else if (levelA.includes("medio")) scoreA = 3;
+  // Check if it's DetailLevelsData (organized by level) or DetailLevelsByTopic (organized by topic)
+  const isByLevel = detailLevelsA && ("alto" in detailLevelsA || "medio" in detailLevelsA || "bajo" in detailLevelsA);
+  
+  let detailRadarData: Array<{ topic: string; candidateA: number; candidateB: number }> = [];
+  
+  if (isByLevel) {
+    // If organized by level, we can't easily create a topic-based radar chart
+    // So we'll create a simple comparison by level counts
+    const levels = ["alto", "medio", "bajo"] as const;
+    detailRadarData = levels.map((level) => {
+      const countA = Array.isArray((detailLevelsA as DetailLevelsData)?.[level]) 
+        ? (detailLevelsA as DetailLevelsData)[level]?.length || 0 
+        : 0;
+      const countB = Array.isArray((detailLevelsB as DetailLevelsData)?.[level]) 
+        ? (detailLevelsB as DetailLevelsData)[level]?.length || 0 
+        : 0;
+      
+      return {
+        topic: level.charAt(0).toUpperCase() + level.slice(1),
+        candidateA: countA,
+        candidateB: countB,
+      };
+    });
+  } else {
+    // If organized by topic
+    const detailTopics = new Set<string>();
+    if (detailLevelsA) {
+      Object.keys(detailLevelsA).forEach((key) => detailTopics.add(key));
+    }
+    if (detailLevelsB) {
+      Object.keys(detailLevelsB).forEach((key) => detailTopics.add(key));
     }
 
-    if (levelB) {
-      if (levelB.includes("alto")) scoreB = 5;
-      else if (levelB.includes("medio")) scoreB = 3;
-    }
+    detailRadarData = Array.from(detailTopics).map((topic) => {
+      const levelA = (detailLevelsA as DetailLevelsByTopic)?.[topic];
+      const levelB = (detailLevelsB as DetailLevelsByTopic)?.[topic];
 
-    return {
-      topic: topic.charAt(0).toUpperCase() + topic.slice(1),
-      candidateA: scoreA,
-      candidateB: scoreB,
-    };
-  });
+      let scoreA = 1;
+      let scoreB = 1;
+
+      if (Array.isArray(levelA)) {
+        if (levelA.some((item) => item.includes("alto"))) scoreA = 5;
+        else if (levelA.some((item) => item.includes("medio"))) scoreA = 3;
+      }
+
+      if (Array.isArray(levelB)) {
+        if (levelB.some((item) => item.includes("alto"))) scoreB = 5;
+        else if (levelB.some((item) => item.includes("medio"))) scoreB = 3;
+      }
+
+      return {
+        topic: topic.charAt(0).toUpperCase() + topic.slice(1),
+        candidateA: scoreA,
+        candidateB: scoreB,
+      };
+    });
+  }
 
   // Get scores
-  const scoreA = (insightsA?.score as any)?.final_score || 0;
-  const scoreB = (insightsB?.score as any)?.final_score || 0;
+  const scoreA = (insightsA?.score as ScoreData)?.final_score || 0;
+  const scoreB = (insightsB?.score as ScoreData)?.final_score || 0;
 
   // Get overview data
-  const overviewA = insightsA?.overview as any;
-  const overviewB = insightsB?.overview as any;
+  const overviewA = insightsA?.overview as OverviewData | undefined;
+  const overviewB = insightsB?.overview as OverviewData | undefined;
 
   // Get patterns data
-  const patternsA = insightsA?.patterns as any;
-  const patternsB = insightsB?.patterns as any;
+  const patternsA = insightsA?.patterns as PatternsData | undefined;
+  const patternsB = insightsB?.patterns as PatternsData | undefined;
 
   return (
     <div className="container mx-auto py-8 px-4 space-y-8">
