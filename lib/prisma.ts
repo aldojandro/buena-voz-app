@@ -1,4 +1,6 @@
-import { PrismaClient } from "@prisma/client";
+import { PrismaClient, Prisma } from "@prisma/client";
+import { PrismaPg } from "@prisma/adapter-pg";
+import { Pool } from "pg";
 
 const globalForPrisma = globalThis as unknown as {
   prisma: PrismaClient | undefined;
@@ -38,21 +40,16 @@ if (isSupabase) {
   }
 }
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-const prismaOptions: any = {
+// Prisma 7: Create PostgreSQL adapter with connection pool
+const pool = new Pool({ connectionString: finalConnectionString });
+const adapter = new PrismaPg(pool);
+
+const prismaOptions: Prisma.PrismaClientOptions = {
+  adapter,
   log: process.env.NODE_ENV === "development"
     ? ["query", "error", "warn"]
     : ["error"],
 };
-
-// Override connection string for Supabase to use direct connection
-if (isSupabase && finalConnectionString !== connectionString) {
-  prismaOptions.datasources = {
-    db: {
-      url: finalConnectionString,
-    },
-  };
-}
 
 export const prisma =
   globalForPrisma.prisma ??
