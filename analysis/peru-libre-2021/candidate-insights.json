@@ -1,0 +1,68 @@
+{
+  "overview": {
+    "summary": "El documento presenta el ideario y programa de un partido que se define como organización de izquierda socialista marxista, leninista y mariateguista, cuya meta central es desmontar el modelo neoliberal instaurado con la Constitución de 1993 y reemplazarlo por un nuevo régimen económico denominado \"Economía Popular con Mercados\", con un Estado fuerte, nacionalizador y planificador; al mismo tiempo desarrolla propuestas detalladas en educación, salud, trabajo, descentralización, justicia, soberanía y rol de la mujer en el socialismo. ",
+    "main_topics": [
+      "Cambio constitucional mediante Asamblea Constituyente y desmontaje del neoliberalismo (crítica a la Constitución de 1993 y sus artículos \"pétreos\"). ",
+      "Nuevo modelo económico del Estado: Economía Popular con Mercados, con rol central del Estado regulador, nacionalizador, redistribuidor e industrializador, y revisión de contratos-ley con transnacionales. ",
+      "Reforma profunda de la educación pública: aumento del presupuesto al 10% del PBI, Programa Perú Libre de Analfabetismo, nuevo currículo nacional–regional–local y nueva ley de educación no mercantilista. ",
+      "Nueva salud pública orientada al pueblo: incremento del presupuesto al 10% del PBI, sistema universal, único, gratuito y de calidad, unificación MINSA–EsSalud y referencia a experiencias de Bolivia y Cuba. ",
+      "Política laboral socialista: defensa del derecho al trabajo y después del trabajo, formalización, fortalecimiento del sindicalismo y participación de dirigentes gremiales en instancias de gobierno. ",
+      "Lucha anticorrupción y control del empresariado privado: contraloría especial para empresas, abolición de licitaciones bajo inmunidad diplomática, revisión de contratos-ley y sanción al binomio corrupto–corruptor. ",
+      "Descentralización política, fiscal y territorial, con nuevas competencias regionales sobre economía, seguridad social, infraestructura y mar territorial. ",
+      "La mujer socialista como sujeto activo de la revolución y crítica al machismo como secuela estructural del modo de producción vigente. "
+    ],
+    "ideological_focus": "El texto se declara explícitamente como ideario de una organización de izquierda socialista que abraza la teoría marxista, leninista y mariateguista; se define como democrática, descentralista, internacionalista, inclusiva, soberana, humanista y antimperialista, y plantea un proyecto socialista de largo alcance que se propone desmontar el neoliberalismo económico y político, reemplazar la Constitución de 1993 y construir un Estado plurinacional con Economía Popular con Mercados y fuerte énfasis en la lucha de clases y la soberanía. "
+  },
+  "patterns": {
+    "repetitions": [
+      "Crítica permanente al neoliberalismo, a la Constitución de 1993 y al marco del Consenso de Washington, presentados como raíz de la desigualdad, la privatización y el saqueo de los recursos del país. ",
+      "Reiteración del concepto de Economía Popular con Mercados como nuevo modelo económico, contrapuesto a la Economía Social de Mercado, con el Estado como regulador, interventor, nacionalizador, planificador, redistribuidor e industrializador. ",
+      "Insistencia en la necesidad de un Estado fuerte, soberano y protagonista en sectores estratégicos (recursos naturales, energía, puertos, aeropuertos, infraestructuras, contratos con transnacionales). ",
+      "Uso frecuente de cifras macroeconómicas (PBI, porcentajes de presupuesto, deuda pública, reservas internacionales) para justificar los cambios propuestos en economía, educación y salud. ",
+      "Recurso recurrente a experiencias de Bolivia, Ecuador y Cuba como ejemplos exitosos de nacionalización de recursos, renegociación de contratos y sistemas universales de salud y educación. ",
+      "Énfasis constante en la idea de \"Perú Profundo\", de la plurinacionalidad y de la descentralización política y fiscal para corregir el centralismo histórico de la capital. ",
+      "Repetición del binomio Estado–pueblo como sujeto de la transformación revolucionaria y de la lucha de clases como marco interpretativo central de la realidad peruana. "
+    ],
+    "tensions": [
+      "El texto afirma que la empresa privada es el principal elemento corruptor del Estado y detalla mecanismos de corrupción ligados a privatizaciones y contratos-ley, pero a la vez reconoce expresamente que no está en contra de la empresa privada siempre que beneficie a las mayorías y compita en igualdad con la empresa pública; esta coexistencia de crítica severa y aceptación condicionada genera una tensión explícita entre desconfianza estructural y tolerancia regulada hacia el empresariado. ",
+      "Se reivindica la estabilidad jurídica nacional como principio que debe proteger al Estado y al pueblo, al mismo tiempo que se cuestiona la \"estabilidad jurídica y tributaria\" otorgada a las transnacionales a través del artículo 62 de la Constitución vigente, presentándola como mecanismo de saqueo; hay una tensión entre dos concepciones de estabilidad jurídica (pro-Estado vs. pro-inversionista) explícitamente confrontadas. ",
+      "Se exalta la autonomía de la justicia comunal y las normas de las comunidades para combatir delincuencia, narcotráfico y otros delitos, mientras se afirma que el Estado peruano no debe abdicar sus competencias frente a tribunales internacionales; esto crea una tensión entre la soberanía estatal centralizada y el reconocimiento de formas autónomas de justicia comunitaria, ambas defendidas en el texto. "
+    ],
+    "consistent_themes": [
+      "Construcción de un proyecto socialista de largo plazo que continúa una \"revolución inconclusa\" desde Túpac Amaru II, con vocación de transformar el modo de producción y superar la \"esclavitud moderna\" de las mayorías. ",
+      "Visión de la educación y la salud como derechos heredables, no como mercancías; ambos sectores deben ser gratuitos, universales, de calidad y fuertemente financiados (10% del PBI cada uno) como base de la emancipación popular. ",
+      "Reivindicación de la soberanía nacional en economía, justicia y política exterior, incluyendo la revisión o anulación de contratos lesivos, la nacionalización de recursos estratégicos y el rechazo a tribunales internacionales que favorezcan al gran capital. ",
+      "Centralidad del \"Perú Profundo\" y de los pueblos marginados (sierra y amazonía) como sujeto político, con una narrativa de partido nacido en provincias, contestatario tanto a la derecha como a la \"izquierda tradicional\" capitalina. ",
+      "Importancia del trabajo, el sindicalismo y la organización de la clase trabajadora como base de una sociedad justa, con énfasis en la formalización, la equidad de género y la negociación colectiva. ",
+      "Reconocimiento del machismo como secuela histórica y estructural del modo de producción, y planteamiento de la mujer socialista como protagonista de la revolución, vinculando la lucha de género con el cambio del sistema económico. "
+    ]
+  },
+  "detail_level_by_topic": {
+    "alto": [
+      "Cambio constitucional y desmontaje del marco neoliberal: análisis de artículos específicos de la Constitución de 1993 (6, 11, 17, 19, 58, 59, 60, 61, 62), definición de estos como \"artículos pétreos\" del modelo y propuesta concreta de Asamblea Constituyente para redactar una nueva Constitución solidaria, humanista y nacionalizadora. ",
+      "Modelo económico y rol del Estado (Economía Popular con Mercados): enumeración detallada de funciones del Estado (regulador del mercado, descentralizado, fuerte, redistribuidor, industrializador, nacionalizador, revisor de contratos, sin deuda externa, priorizador de demanda interna, estabilizador microeconómico, soberano) con ejemplos tomados de Bolivia y Ecuador. ",
+      "Educación pública: propuesta de aumento del presupuesto del 3,5% al 10% del PBI con cifras concretas en USD y soles, creación del Programa Perú Libre de Analfabetismo (movilización de 50 mil maestros durante 3–4 años y programa de post alfabetización), formulación de un nuevo currículo nacional–regional–local y propuesta de una nueva ley de educación que garantice gratuidad y rompa el interés mercantil; además, reposición de maestros despedidos por políticas de racionalización. ",
+      "Salud pública: declaratoria de emergencia del sector, propuesta de incrementar el presupuesto del 5,4% al 10% del PBI con montos exactos, creación de un sistema universal, único, gratuito y de calidad, unificación de los presupuestos de MINSA y EsSalud y referencia a modelos como Bolivia y Cuba para asegurar acceso gratuito y no discriminatorio. ",
+      "Descentralización económica y fiscal: medidas concretas como creación de Direcciones Regionales de Economía y Finanzas, traslado de domicilios fiscales y tributarios a las regiones donde se explotan las riquezas, descentralización de EsSalud, transferencia de proyectos especiales e infraestructuras deportivas y reconocimiento de derechos marítimos de las regiones costeras sobre el mar territorial. ",
+      "Lucha anticorrupción y control al empresariado privado: propuesta de una contraloría especial para empresas privadas, abolición de licitaciones internacionales bajo inmunidad diplomática, prohibición de que funcionarios se beneficien de leyes emitidas desde sus propias carteras, y revisión/renegociación de contratos-ley con cambio de la proporción de utilidades (de 70–90% a favor de transnacionales a 80% a favor del Estado y 20% a favor de la empresa), con ejemplos concretos del caso ecuatoriano. "
+    ],
+    "medio": [
+      "Gestión de deuda pública, reservas internacionales y recursos naturales: se aportan cifras detalladas de deuda interna y externa, montos de Reservas Internacionales Netas y crítica a su uso en \"papeles financieros\" externos; se plantea priorizar la deuda interna y usar recursos y reservas para inversión social, pero sin desarrollar un plan paso a paso tan granular como en educación o salud. ",
+      "Política laboral socialista y sindicalismo: se exponen principios sobre derecho al trabajo y después del trabajo, informalidad (7 de cada 10 peruanos), rol del sindicalismo como brazo de la producción, participación de dirigentes gremiales en instancias de gobierno, defensa de la estabilidad laboral y equidad de género; sin embargo, las medidas no se traducen en programas con metas cuantificadas o instrumentos tan específicos como en educación y salud. ",
+      "Seguridad ciudadana y justicia: se valora la eficacia de las normas comunitarias para combatir delincuencia, narcotráfico, crimen y adulterio, y se defiende la soberanía de la justicia nacional frente a tribunales internacionales; no obstante, la política de seguridad ciudadana a nivel nacional se formula más como enfoque general que como plan detallado por etapas. ",
+      "Soberanía jurídica y política exterior: se plantea que el Estado no debe abdicar sus competencias a tribunales internacionales, se critica la cesión de jurisdicción en materia financiera y se propone una estabilidad jurídica orientada a proteger al Estado, pero el documento no despliega un conjunto exhaustivo de mecanismos institucionales o tratados alternativos. "
+    ],
+    "bajo": [
+      "Mujer socialista: se describe a la mujer como protagonista de la revolución y se analiza el machismo como secuela histórica y estructural del modo de producción, pero en el fragmento disponible predominan el diagnóstico y la definición ideológica, sin desarrollo de un paquete de políticas concretas (cuotas, instituciones específicas, programas, presupuestos) comparable al nivel de detalle de otros capítulos. "
+    ]
+  },
+  "score": {
+    "detail_distribution": {
+      "high": 6,
+      "medium": 4,
+      "low": 1
+    },
+    "final_score": 0.67,
+    "scoring_logic": "Primero se identificaron 11 temas programáticos con suficiente desarrollo explícito en el texto para ser evaluados: (1) cambio constitucional y desmontaje del neoliberalismo; (2) modelo económico y rol del Estado (Economía Popular con Mercados); (3) gestión de deuda, reservas y recursos; (4) educación pública; (5) salud pública; (6) descentralización económica y fiscal; (7) política laboral y sindicalismo; (8) lucha anticorrupción y control al empresariado; (9) seguridad/justicia; (10) mujer socialista; (11) soberanía jurídica y política exterior. A cada tema se le asignó un nivel de detalle según los criterios acordados: \"alto\" cuando el texto describe mecanismos concretos, cifras, instrumentos, programas y pasos operativos (6 temas); \"medio\" cuando expone lineamientos, principios y algunos ejemplos pero con menor grado de operacionalización (4 temas); \"bajo\" cuando predomina el diagnóstico o el marco ideológico sin un paquete claro de medidas (1 tema). Aplicando la fórmula indicada: final_score = ((#alto * 3) + (#medio * 1) + (#bajo * 0)) / (N * 3) = ((6 * 3) + (4 * 1) + (1 * 0)) / (11 * 3) = (18 + 4 + 0) / 33 = 22/33 ≈ 0.67. Redondeado a dos decimales, el plan obtiene 0.67, lo que según la escala se interpreta como \"Plan con buen nivel de detalle, aunque desigual\": existen múltiples áreas con propuestas muy concretas y cuantificadas (constitución, modelo económico, educación, salud, descentralización, anticorrupción), pero otras dimensiones quedan desarrolladas solo a nivel de principios o diagnósticos generales, lo que genera una distribución de detalle algo heterogénea entre temas."
+  }
+}

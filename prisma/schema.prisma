@@ -1,0 +1,187 @@
+generator client {
+  provider        = "prisma-client-js"
+  previewFeatures = []
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Election {
+  id         String      @id @default(cuid())
+  year       Int
+  type       String
+  country    String
+  name       String?
+  createdAt  DateTime    @default(now())
+  updatedAt  DateTime    @updatedAt
+  candidates Candidate[]
+  documents  Document[]
+
+  @@unique([year, type, country], name: "year_type_country")
+  @@map("elections")
+}
+
+model Candidate {
+  id                      String                   @id @default(cuid())
+  electionId              String
+  name                    String
+  party                   String?
+  position                String?
+  createdAt               DateTime                 @default(now())
+  updatedAt               DateTime                 @updatedAt
+  candidateInsights       CandidateInsights[]
+  proposalSummaries       ProposalSummary[]
+  topicClassifications    TopicClassification[]
+  candidateMetrics        CandidateMetrics[]
+  election                Election                 @relation(fields: [electionId], references: [id], onDelete: Cascade)
+  proposalTypologies      ProposalTypology[]
+  thematicClassifications ThematicClassification[]
+
+  @@map("candidates")
+}
+
+model Document {
+  id                      String                   @id @default(cuid())
+  electionId              String
+  title                   String
+  source                  String?
+  url                     String?
+  createdAt               DateTime                 @default(now())
+  updatedAt               DateTime                 @updatedAt
+  candidateInsights       CandidateInsights[]
+  proposalSummaries       ProposalSummary[]
+  topicClassifications    TopicClassification[]
+  candidateMetrics        CandidateMetrics[]
+  election                Election                 @relation(fields: [electionId], references: [id], onDelete: Cascade)
+  proposalTypologies      ProposalTypology[]
+  sections                Section[]
+  thematicClassifications ThematicClassification[]
+
+  @@map("documents")
+}
+
+model Section {
+  id         String     @id @default(cuid())
+  documentId String
+  title      String
+  content    String?
+  order      Int        @default(0)
+  createdAt  DateTime   @default(now())
+  updatedAt  DateTime   @updatedAt
+  proposals  Proposal[]
+  document   Document   @relation(fields: [documentId], references: [id], onDelete: Cascade)
+
+  @@map("sections")
+}
+
+model Proposal {
+  id              String           @id @default(cuid())
+  sectionId       String
+  title           String
+  content         String?
+  order           Int              @default(0)
+  createdAt       DateTime         @default(now())
+  updatedAt       DateTime         @updatedAt
+  classifications Classification[]
+  section         Section          @relation(fields: [sectionId], references: [id], onDelete: Cascade)
+
+  @@map("proposals")
+}
+
+model Classification {
+  id          String   @id @default(cuid())
+  proposalId  String
+  category    String
+  tags        String[]
+  description String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  proposal    Proposal @relation(fields: [proposalId], references: [id], onDelete: Cascade)
+
+  @@map("classifications")
+}
+
+model CandidateInsights {
+  id           String    @id @default(cuid())
+  candidateId  String
+  documentId   String
+  overview     Json
+  patterns     Json
+  detailLevels Json
+  score        Json
+  candidate    Candidate @relation(fields: [candidateId], references: [id], onDelete: Cascade)
+  document     Document  @relation(fields: [documentId], references: [id], onDelete: Cascade)
+
+  @@unique([candidateId, documentId])
+}
+
+model TopicClassification {
+  id          String    @id @default(cuid())
+  candidateId String
+  documentId  String
+  categories  Json
+  candidate   Candidate @relation(fields: [candidateId], references: [id], onDelete: Cascade)
+  document    Document  @relation(fields: [documentId], references: [id], onDelete: Cascade)
+
+  @@unique([candidateId, documentId])
+}
+
+model ProposalSummary {
+  id            String    @id @default(cuid())
+  candidateId   String
+  documentId    String
+  typologies    Json
+  metrics       Json
+  economicFocus String?
+  candidate     Candidate @relation(fields: [candidateId], references: [id], onDelete: Cascade)
+  document      Document  @relation(fields: [documentId], references: [id], onDelete: Cascade)
+
+  @@unique([candidateId, documentId])
+}
+
+model CandidateMetrics {
+  id           String    @id @default(uuid())
+  candidateId  String
+  documentId   String
+  score        Float
+  detailHigh   Int
+  detailMedium Int
+  detailLow    Int
+  createdAt    DateTime  @default(now())
+  candidate    Candidate @relation(fields: [candidateId], references: [id], onDelete: Cascade)
+  document     Document  @relation(fields: [documentId], references: [id], onDelete: Cascade)
+
+  @@map("candidate_metrics")
+}
+
+model ThematicClassification {
+  id          String    @id @default(uuid())
+  candidateId String
+  documentId  String
+  category    String
+  count       Int
+  examples    Json
+  createdAt   DateTime  @default(now())
+  candidate   Candidate @relation(fields: [candidateId], references: [id], onDelete: Cascade)
+  document    Document  @relation(fields: [documentId], references: [id], onDelete: Cascade)
+
+  @@unique([candidateId, documentId, category])
+  @@map("thematic_classifications")
+}
+
+model ProposalTypology {
+  id          String    @id @default(uuid())
+  candidateId String
+  documentId  String
+  typology    String
+  count       Int
+  examples    Json
+  createdAt   DateTime  @default(now())
+  candidate   Candidate @relation(fields: [candidateId], references: [id], onDelete: Cascade)
+  document    Document  @relation(fields: [documentId], references: [id], onDelete: Cascade)
+
+  @@unique([candidateId, documentId, typology])
+  @@map("proposal_typologies")
+}

@@ -1,0 +1,78 @@
+{
+  "categories": [
+    {
+      "name": "Asamblea Constituyente y Nueva Constitución",
+      "mentions": 2,
+      "example_phrases": [
+        "Asamblea Constituyente y Nueva Constitución" ,
+        "Necesitamos promover y lograr un cambio constitucional que incorpore un enfoque diametralmente opuesto"
+      ]
+    },
+    {
+      "name": "Economía Popular Con Mercados",
+      "mentions": 2,
+      "example_phrases": [
+        "Economía Popular Con Mercados",
+        "estos parámetros han sido tomados de la experiencia gubernamental de Bolivia y Ecuador"
+      ]
+    },
+    {
+      "name": "Descentralización",
+      "mentions": 3,
+      "example_phrases": [
+        "la descentralización se encuentra paralizada",
+        "Deben crearse en cada departamento la Dirección Regional de Economía y Finanzas",
+        "autonomía descentralizada y ella logra su máxima cúspide cuando se convierte en una República Federal"
+      ]
+    },
+    {
+      "name": "Educación",
+      "mentions": 4,
+      "example_phrases": [
+        "Nuevo Currículo Nacional, Regional y Local",
+        "Escuelas de educación especial",
+        "la educación debe darse a nivel inicial, secundario y superior"
+      ]
+    },
+    {
+      "name": "Salud",
+      "mentions": 1,
+      "example_phrases": [
+        "nuestro país asiste a una de las vergüenzas mundiales más grandes por tres razones",
+        "haber hecho de la educación un servicio mercantil lejos de ser un derecho socialmente heredable"
+      ]
+    },
+    {
+      "name": "Soberanía",
+      "mentions": 1,
+      "example_phrases": [
+        "Estado nacionalizador soberano",
+        "fortalezca la economía interna invirtiendo sus capitales en el país"
+      ]
+    },
+    {
+      "name": "Medio ambiente",
+      "mentions": 1,
+      "example_phrases": [
+        "educación medioambiental",
+        "orientándonos al rescate de nuestra cultura contemporánea y ancestral"
+      ]
+    },
+    {
+      "name": "Agricultura / Política Agraria",
+      "mentions": 1,
+      "example_phrases": [
+        "Política agraria como seguridad nacional",
+        "cada uno con sus propios problemas y potencialidades"
+      ]
+    },
+    {
+      "name": "Mujer socialista",
+      "mentions": 1,
+      "example_phrases": [
+        "la mujer socialista",
+        "cultural machista de nuestra sociedad"
+      ]
+    }
+  ]
+}

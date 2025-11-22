@@ -1,0 +1,184 @@
+{
+  "proposals": [
+    {
+      "text": "Establecer el reconocimiento de las prácticas preprofesionales como parte de la experiencia profesional",
+      "section": 86,
+      "classification": "mejora"
+    },
+    {
+      "text": "Generar una normativa especial para los emprendimientos de los jóvenes que incluya impuestos cero durante los dos primeros años",
+      "section": 86,
+      "classification": "reforma"
+    },
+    {
+      "text": "Promover establecer una política de garantías del Estado para el financiamiento de préstamos estudiantiles",
+      "section": 86,
+      "classification": "reforma"
+    },
+    {
+      "text": "Ampliar la calidad y cobertura de los programas de inserción laboral",
+      "section": 86,
+      "classification": "mejora"
+    },
+    {
+      "text": "Fortalecer y promover la difusión de los programas y concursos a cargo de PromPyme",
+      "section": 86,
+      "classification": "mejora"
+    },
+    {
+      "text": "Mejorar y ampliar la cobertura del plan de becas estudiantiles",
+      "section": 86,
+      "classification": "mejora"
+    },
+    {
+      "text": "Establecer mecanismos de protección para las mascotas a través del registro, protección, cuidado y recuperación",
+      "section": 86,
+      "classification": "mejora"
+    },
+    {
+      "text": "Promover el uso y acceso a bibliotecas físicas y generar bibliotecas virtuales",
+      "section": 86,
+      "classification": "mejora"
+    },
+    {
+      "text": "Implementar medidas para garantizar un Gobierno Abierto",
+      "section": 81,
+      "classification": "reforma"
+    },
+    {
+      "text": "Evaluar qué funciones deben ser transferidas a los gobiernos subnacionales",
+      "section": 80,
+      "classification": "reforma"
+    },
+    {
+      "text": "Evaluar el desempeño, asignaciones presupuestarias y mecanismos de recaudación de los gobiernos regionales",
+      "section": 80,
+      "classification": "reforma"
+    },
+    {
+      "text": "Revisar la superposición y duplicidad de funciones entre los diferentes niveles de gobierno",
+      "section": 80,
+      "classification": "reforma"
+    },
+    {
+      "text": "Trabajar con modelos organizacionales municipales aplicados a la diversidad geográfica",
+      "section": 80,
+      "classification": "mejora"
+    },
+    {
+      "text": "Fortalecer las Agencias Regionales de Desarrollo",
+      "section": 80,
+      "classification": "mejora"
+    },
+    {
+      "text": "Fortalecer los GORE Ejecutivos y MuniEjecutivos",
+      "section": 80,
+      "classification": "mejora"
+    },
+    {
+      "text": "Brindar asistencia técnica a los gobiernos locales en la ejecución de proyectos de inversión",
+      "section": 80,
+      "classification": "mejora"
+    },
+    {
+      "text": "Revisar todos los programas sociales para incorporarles un enfoque productivo supervisado por PROMPYME",
+      "section": 17,
+      "classification": "reforma"
+    },
+    {
+      "text": "Desarrollar un programa de apoyo especial a la Mype del sector turismo, restaurantes y afines",
+      "section": 17,
+      "classification": "mejora"
+    },
+    {
+      "text": "Implementar un fondo de garantías que permita el otorgamiento de créditos a mercados y talleres",
+      "section": 17,
+      "classification": "reforma"
+    },
+    {
+      "text": "Desarrollar una verdadera reforma tributaria para la Mype",
+      "section": 17,
+      "classification": "reforma"
+    },
+    {
+      "text": "Prohibir la doble sanción del cierre y multa",
+      "section": 17,
+      "classification": "extrema"
+    },
+    {
+      "text": "Corregir la reglamentación de decomiso de mercadería",
+      "section": 17,
+      "classification": "reforma"
+    },
+    {
+      "text": "Revisión de las multas e intereses de municipios y Sunat a las mypes",
+      "section": 17,
+      "classification": "mejora"
+    },
+    {
+      "text": "Garantizar el cumplimiento efectivo e independiente de la normativa ambiental",
+      "section": 17,
+      "classification": "reforma"
+    },
+    {
+      "text": "Hacer más ágil y menos oneroso los procedimientos de habilitación urbana",
+      "section": 70,
+      "classification": "mejora"
+    },
+    {
+      "text": "Reorganizar COFOPRI para que vuelva a ser una institución ágil y amigable",
+      "section": 70,
+      "classification": "reforma"
+    },
+    {
+      "text": "Emprender un gran proceso de formalización a nivel nacional entregando títulos de propiedad registrados",
+      "section": 70,
+      "classification": "reforma"
+    },
+    {
+      "text": "Diseñar estrategias legales articuladas para controlar y fiscalizar el tráfico ilegal de terrenos",
+      "section": 70,
+      "classification": "reforma"
+    },
+    {
+      "text": "Conformar equipos de evaluación de viviendas en zonas de riesgo y establecer una política de reubicación",
+      "section": 70,
+      "classification": "reforma"
+    },
+    {
+      "text": "Desarrollar políticas para impulsar el desarrollo inmobiliario orientado a las clases sociales C, D y E mediante subsidios",
+      "section": 70,
+      "classification": "reforma"
+    },
+    {
+      "text": "Fortalecer los Programas del Vaso de Leche y los Comedores Populares",
+      "section": 76,
+      "classification": "mejora"
+    },
+    {
+      "text": "Garantizar que los beneficiarios del Programa Qali Warma reciban sus alimentos",
+      "section": 76,
+      "classification": "continuidad"
+    },
+    {
+      "text": "Desarrollar una adecuada focalización respecto del programa JUNTOS",
+      "section": 76,
+      "classification": "mejora"
+    },
+    {
+      "text": "Hacer un seguimiento a los menores beneficiarios del programa JUNTOS",
+      "section": 76,
+      "classification": "mejora"
+    },
+    {
+      "text": "Continuar con los programas sociales del Ministerio de Trabajo",
+      "section": 76,
+      "classification": "continuidad"
+    },
+    {
+      "text": "Promover la transparencia y la rendición de cuentas",
+      "section": 75,
+      "classification": "reforma"
+    }
+  ]
+}

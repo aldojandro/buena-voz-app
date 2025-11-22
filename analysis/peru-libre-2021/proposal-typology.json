@@ -1,0 +1,109 @@
+{
+  "proposals": [
+    {
+      "text": "La nueva CPP debe redactarse mediante una Asamblea Constituyente",
+      "section": 0,
+      "classification": "ruptura"
+    },
+    {
+      "text": "Cambio del Estado regulado por el mercado por un Estado que regule al mercado",
+      "section": 0,
+      "classification": "reforma"
+    },
+    {
+      "text": "Cambio del Estado centralista por un Estado descentralizado, fiscal y tributario",
+      "section": 0,
+      "classification": "reforma"
+    },
+    {
+      "text": "Cambio del Estado vigilante supervisor por un Estado interventor, planificador, innovador, empresario y protector",
+      "section": 0,
+      "classification": "reforma"
+    },
+    {
+      "text": "Cambio del Estado acumulador por un Estado redistribuidor de la riqueza",
+      "section": 10,
+      "classification": "reforma"
+    },
+    {
+      "text": "Cambio del Estado primario exportador por un Estado industrializador",
+      "section": 10,
+      "classification": "reforma"
+    },
+    {
+      "text": "Cambio del Estado privatizador por un Estado nacionalizador soberano",
+      "section": 10,
+      "classification": "extrema"
+    },
+    {
+      "text": "Permitir la revisión, renegociación o anulación de los contratos",
+      "section": 10,
+      "classification": "reforma"
+    },
+    {
+      "text": "Debe crearse un ente contralor para fiscalizar el sector privado",
+      "section": 1,
+      "classification": "reforma"
+    },
+    {
+      "text": "Abolir licitaciones internacionales escudadas por inmunidad diplomática",
+      "section": 1,
+      "classification": "extrema"
+    },
+    {
+      "text": "Los ascensos debieran darse por méritos frente a crímenes resueltos",
+      "section": 1,
+      "classification": "mejora"
+    },
+    {
+      "text": "Eliminar todos los sueldos dorados mencionados",
+      "section": 2,
+      "classification": "reforma"
+    },
+    {
+      "text": "Eliminar la inmunidad política",
+      "section": 2,
+      "classification": "extrema"
+    },
+    {
+      "text": "Promulgación de una nueva ley de educación que garantice la gratuidad de la enseñanza",
+      "section": 3,
+      "classification": "reforma"
+    },
+    {
+      "text": "Reposición de maestros despedidos",
+      "section": 3,
+      "classification": "mejora"
+    },
+    {
+      "text": "Declaratoria de emergencia del Sector Salud",
+      "section": 19,
+      "classification": "reforma"
+    },
+    {
+      "text": "Incrementar el presupuesto al 10% del PBI",
+      "section": 19,
+      "classification": "reforma"
+    },
+    {
+      "text": "La salud debe reconocerse constitucionalmente como un derecho heredable del pueblo peruano",
+      "section": 19,
+      "classification": "reforma"
+    },
+    {
+      "text": "Unificar los presupuestos de EsSalud y MINSA",
+      "section": 19,
+      "classification": "reforma"
+    },
+    {
+      "text": "Instauración del acceso gratuito, universal y de calidad a los servicios de salud pública",
+      "section": 19,
+      "classification": "reforma"
+    },
+    {
+      "text": "Hospitales especializados en cada región",
+      "section": 20,
+      "classification": "mejora"
+    }
+  ]
+}

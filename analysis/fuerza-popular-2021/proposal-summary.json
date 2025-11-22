@@ -1,0 +1,148 @@
+{
+  "categories": [
+    {
+      "name": "Reactivación económica",
+      "mentions": 1,
+      "example_phrases": [
+        "reactivación económica",
+        "generación de empleo, emprendimiento y sectores productivos"
+      ]
+    },
+    {
+      "name": "Salud y pandemia",
+      "mentions": 1,
+      "example_phrases": [
+        "manejo de la pandemia",
+        "brecha inmensa en el sistema de salud"
+      ]
+    },
+    {
+      "name": "Democracia y Estado de derecho",
+      "mentions": 1,
+      "example_phrases": [
+        "defensa del sistema democrático",
+        "consolidación del Estado de derecho"
+      ]
+    },
+    {
+      "name": "Economía social de mercado",
+      "mentions": 1,
+      "example_phrases": [
+        "economía social de mercado",
+        "Libre mercado sí"
+      ]
+    },
+    {
+      "name": "Economía popular y solidaria",
+      "mentions": 1,
+      "example_phrases": [
+        "economía popular",
+        "economía solidaria"
+      ]
+    },
+    {
+      "name": "Seguridad ciudadana y orden público",
+      "mentions": 1,
+      "example_phrases": [
+        "orden público y seguridad ciudadana",
+        "apoyo decidido a la Policía Nacional y a las Fuerzas Armadas"
+      ]
+    },
+    {
+      "name": "Educación",
+      "mentions": 1,
+      "example_phrases": [
+        "la educación como gran movilizador social",
+        "la educación es crecimiento"
+      ]
+    },
+    {
+      "name": "Cultura y economía naranja",
+      "mentions": 1,
+      "example_phrases": [
+        "promover el desarrollo de la economía naranja",
+        "las industrias culturales"
+      ]
+    },
+    {
+      "name": "Patrimonio cultural",
+      "mentions": 1,
+      "example_phrases": [
+        "el patrimonio cultural de la nación",
+        "conservación y defensa del patrimonio cultural"
+      ]
+    },
+    {
+      "name": "Pueblos indígenas y originarios",
+      "mentions": 1,
+      "example_phrases": [
+        "55 pueblos indígenas u originarios",
+        "fortalecer las intervenciones que propicien el apoyo, rescate y defensa"
+      ]
+    },
+    {
+      "name": "Afrodescendientes",
+      "mentions": 1,
+      "example_phrases": [
+        "población afrodescendiente",
+        "población afroperuana"
+      ]
+    },
+    {
+      "name": "Diversidad cultural",
+      "mentions": 1,
+      "example_phrases": [
+        "diversidad cultural como fortaleza",
+        "país megadiverso"
+      ]
+    },
+    {
+      "name": "Pobreza y redistribución",
+      "mentions": 1,
+      "example_phrases": [
+        "justa redistribución de la riqueza",
+        "programas sociales permiten equiparar derechos"
+      ]
+    },
+    {
+      "name": "Constitución de 1993",
+      "mentions": 1,
+      "example_phrases": [
+        "cimientos sólidos que ha dado la Constitución de 1993",
+        "han querido destruirla, pero no han podido"
+      ]
+    },
+    {
+      "name": "Partidos políticos",
+      "mentions": 1,
+      "example_phrases": [
+        "los partidos políticos, base del sistema democrático",
+        "importancia de los partidos políticos"
+      ]
+    },
+    {
+      "name": "Participación ciudadana",
+      "mentions": 1,
+      "example_phrases": [
+        "recogemos las necesidades y propuestas de los ciudadanos",
+        "soluciones discutidas en el mismo lugar de los hechos"
+      ]
+    },
+    {
+      "name": "Paz, libertad y derechos humanos",
+      "mentions": 1,
+      "example_phrases": [
+        "la paz, la libertad y los derechos humanos",
+        "pueblo libre"
+      ]
+    },
+    {
+      "name": "Identidad nacional",
+      "mentions": 1,
+      "example_phrases": [
+        "sentimiento popular",
+        "identidad ligada a una gestión en contacto permanente con el pueblo"
+      ]
+    }
+  ]
+}
